@@ -1,0 +1,28 @@
+# 忽略 Node.js 依赖文件夹
+node_modules/
+
+# 忽略生成的构建文件或目录
+/build/
+/dist/
+/lib/
+
+# 忽略本地配置文件（如果有的话）
+.env
+.env.local
+.env.*.local
+
+# 忽略编辑器生成的临时文件
+.vscode/
+.idea/
+
+# 忽略运行时生成的文件或文件夹
+.DS_Store
+Thumbs.db
+.cache/
+
+# 忽略日志文件
+*.log
+
+# 忽略npm的yarn的lock文件
+yarn.lock
+package-lock.json

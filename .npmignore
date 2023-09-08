@@ -1,0 +1,39 @@
+# 忽略 Node.js 依赖文件夹
+node_modules/
+
+# 忽略开发和测试相关的文件
+__tests__
+*.test.js
+*.spec.js
+test/
+
+
+# 忽略文档
+docs/
+*.md
+
+# 忽略编辑器相关的文件
+.vscode/
+.idea/
+
+# 忽略 CI/CD 相关文件
+.travis.yml
+.github/
+
+# 忽略构建工具的配置文件
+webpack.config.js
+rollup.config.mjs
+tsconfig.json
+
+# 忽略未构建的源代码文件
+src/
+
+# 忽略本地配置文件
+.env
+
+# 忽略npm的yarn的lock文件
+yarn.lock
+package-lock.json
+
+# ignore
+.gitignore

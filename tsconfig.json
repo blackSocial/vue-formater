@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 目标 JavaScript 版本
+    "module": "NodeNext", // 模块系统,
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist", // 输出目录
+    "rootDir": "./src", // TypeScript 源代码目录
+    "strict": true, // 启用严格模式
+    "declaration": true
+  },
+  "include": [
+    "./src/**/*.ts", // 包括哪些文件
+    "global.d.ts" // 包括哪些文件
+  ],
+  "exclude": [
+    "node_modules" // 排除哪些文件
+  ]
+}

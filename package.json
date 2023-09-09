@@ -1,8 +1,8 @@
 {
   "name": "vue-formater",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "",
-  "main": "./lib/vue-format.js",
+  "main": "./lib/vue-formater.js",
   "type": "module",
   "scripts": {
     "build": "rollup --config",

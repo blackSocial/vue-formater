@@ -1,6 +1,6 @@
 {
-  "name": "vue-format",
-  "version": "1.0.0",
+  "name": "vue-formater",
+  "version": "1.0.1",
   "description": "",
   "main": "./lib/vue-format.js",
   "type": "module",
@@ -25,9 +25,9 @@
     "@rollup/plugin-terser": "^0.4.3",
     "@rollup/plugin-typescript": "^11.1.3",
     "@types/node": "^20.5.9",
-    "typescript": "^5.2.2",
     "rollup": "^3.29.0",
-    "tslib": "^2.6.2"
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
   },
   "engines": {
     "node": ">=14.17.0 <19"

@@ -7,7 +7,7 @@ npm install stylelint-config-standard --save-dev
 
 npm install stylelint-stylus --save-dev
 
-npm install vue-format -g
+npm install vue-formater -g
 ```
 
 # Usage

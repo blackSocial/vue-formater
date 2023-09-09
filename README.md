@@ -1,4 +1,4 @@
-# vue-format
+# vue-formater
 
 # Installation
 

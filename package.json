@@ -1,6 +1,6 @@
 {
   "name": "vue-formater",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "./lib/vue-formater.js",
   "type": "module",
@@ -17,6 +17,8 @@
     "eslint": "^8.48.0",
     "prettier": "^3.0.3",
     "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-stylus": "^0.18.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {

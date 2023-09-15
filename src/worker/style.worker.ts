@@ -1,15 +1,18 @@
 import { readFile, rm, writeFile } from "node:fs/promises";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
 import { cwd } from "node:process";
 import { parentPort } from "node:worker_threads";
 import stylelint from "stylelint";
-import { SFCStyleBlock } from "vue/compiler-sfc";
+import { SFCStyleBlock } from "@vue/compiler-sfc";
 import STYLE_CONFIG from "../config/stylelint.config.js";
+import { fileURLToPath } from "node:url";
 
 const libPath = cwd();
 
 parentPort!.on("message", async (styles: SFCStyleBlock[]) => {
   const promiseIterator: Array<Promise<any>> = [];
+
+  console.log();
 
   styles.forEach((style, index) => {
     const filePath = join(libPath, `${index.toString()}.stylus`);
@@ -19,6 +22,7 @@ parentPort!.on("message", async (styles: SFCStyleBlock[]) => {
         return stylelint.lint({
           files: filePath,
           config: STYLE_CONFIG,
+          configBasedir: join(dirname(fileURLToPath(import.meta.url)), "../.."),
           fix: true
         });
       })

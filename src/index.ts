@@ -1,7 +1,7 @@
+import { parse } from "@vue/compiler-sfc";
 import { readFile, readdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { argv } from "node:process";
-import { parse } from "vue/compiler-sfc";
 import { WORKER_PATH } from "./constant/path.constant.js";
 import { CustomVueDescriptor } from "./interface/custom-vue-descriptor.interface.js";
 import { createWorker } from "./utils/create-worker.js";

@@ -1,6 +1,6 @@
 import { parentPort } from "node:worker_threads";
 // import { setupJudge } from "../utils/setup-judge.js";
-import { SFCScriptBlock } from "vue/compiler-sfc";
+import { SFCScriptBlock } from "@vue/compiler-sfc";
 import { scriptHandle, setupScriptHandle } from "../utils/script-handle.js";
 
 interface ScriptCallbackParams {
